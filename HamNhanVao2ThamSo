@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HamNhanVao2ThamSo</title>
+</head>
+<body>
+    <script>
+        var x = parseInt(prompt('x:'));
+        var y = parseInt(prompt('y:'));
+        var ket_qua;
+        HamNhanVao2ThamSo(x,y);
+        function HamNhanVao2ThamSo(x,y) {
+
+            if(x>y)
+            {
+                alert(x+' lon hon '+y);
+            }
+            else if(x<=y)
+            {
+                ket_qua=x+y;
+                return ket_qua;
+            }
+        }
+        alert(ket_qua);
+    </script>
+</body>
+</html>
