@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        mang1 =['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair','Dubhe','Regulus'];
+        mang2=['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major','Leo'];
+        tim_sao();
+        function tim_sao()
+        {
+            var ten_sao=prompt('Nhập vào tên ngôi sao : ');
+            var check=true;
+            for(var x=0;x<mang1.length;x++)
+                {
+                    if(ten_sao==mang1[x])
+                    {
+                        check;
+                        alert(mang2[x]);
+                        break;
+                    }
+                    else{
+                        check=false;
+                    }
+                }
+            if(check==false)
+            {
+                alert('Không tìm thấy ngôi sao này');
+            }
+        }
+
+    </script>
+</body>
+</html>
