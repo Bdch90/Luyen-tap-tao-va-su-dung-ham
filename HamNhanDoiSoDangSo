@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HamNhanDoiSoDangSo</title>
+</head>
+<body>
+    <script>
+        var x=12;
+        HamNhanDoiSoDangSo(x);
+        var ket_qua;
+        function HamNhanDoiSoDangSo(x) {
+            ket_qua=x+=1;
+            return ket_qua;
+        }
+        document.write(ket_qua);
+    </script>
+</body>
+</html>
