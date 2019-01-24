@@ -12,25 +12,27 @@
         function tim_sao()
         {
             var ten_sao=prompt('Nhập vào tên ngôi sao : ');
-            var check=true;
+            var check='0';
             for(var x=0;x<mang1.length;x++)
                 {
                     if(ten_sao==mang1[x])
                     {
-                        check;
-                        alert(mang2[x]);
+                        check=0;
                         break;
                     }
                     else{
-                        check=false;
+                        check+=1;
                     }
                 }
-            if(check==false)
+            if(check==0)
+            {
+                alert(mang2[x]);
+            }
+            else
             {
                 alert('Không tìm thấy ngôi sao này');
             }
         }
-
     </script>
 </body>
 </html>
